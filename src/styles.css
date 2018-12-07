@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+.menu-item-icon {
+    position: relative;
+    top: 10px;
+    left: -5px;
+}
+.span-small {
+    font-size: 10px;
+}
+.fa {
+    font-size: 1.5em !important;
+}
+#logo > .container > div > div span {
+    font-size: 1.6em;
+    color: antiquewhite;
+}
+#top-menu {
+    background-color: #eceeef;
+}
