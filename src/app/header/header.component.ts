@@ -3,11 +3,11 @@ import { Settings } from '../settings';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class MainComponent implements OnInit {
+export class HeaderComponent implements OnInit {
 
   constructor( private title: Title ) {}
 
