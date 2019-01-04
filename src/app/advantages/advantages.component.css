@@ -1,0 +1,7 @@
+#advantages {
+    color: #01325a;
+}
+
+#advantages p > i {
+    color: #0165b7;
+}

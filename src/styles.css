@@ -10,32 +10,3 @@
 .fa {
     font-size: 1.5em !important;
 }
-#logo > .container > div > div span {
-    font-size: 1.6em;
-    color: antiquewhite;
-}
-#top-menu {
-    background-color: #eceeef;
-}
-
-#top-menu ul.nav > li:first-child > a {
-    padding-left: 0px;
-}
-
-#carouselExampleControls > .carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
-
-#partner-text > p {
-    font-size: 1.2rem;
-    color: #002d52;
-}
-
-#advantages {
-    color: #01325a;
-}
-
-#advantages p > i {
-    color: #0165b7;
-}

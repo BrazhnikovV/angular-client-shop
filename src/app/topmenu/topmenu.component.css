@@ -1,0 +1,7 @@
+#top-menu {
+    background-color: #eceeef;
+}
+
+#top-menu ul.nav > li:first-child > a {
+    padding-left: 0px;
+}
