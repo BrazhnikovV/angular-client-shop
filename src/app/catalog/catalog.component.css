@@ -1,0 +1,25 @@
+.nav-link {
+    padding: 0.0em 0em 0.2em;
+}
+
+#catalog {
+    margin-top: 40px;
+}
+
+#catalog .search {
+    color: gray;
+}
+
+#catalog h2 {
+    padding-top: 15px !important;
+    font-weight: bold;
+}
+
+#catalog span.catalog-section-title {
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+#catalog ul > li a {
+    font-size: 0.8rem;
+}

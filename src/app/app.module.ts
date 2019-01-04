@@ -10,6 +10,8 @@ import { TopmenuComponent } from './topmenu/topmenu.component';
 import { SliderComponent } from './slider/slider.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { PartnerComponent } from './partner/partner.component';
+import { CatalogComponent } from './catalog/catalog.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PartnerComponent } from './partner/partner.component';
     TopmenuComponent,
     SliderComponent,
     AdvantagesComponent,
-    PartnerComponent
+    PartnerComponent,
+    CatalogComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
