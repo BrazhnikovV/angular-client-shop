@@ -3,39 +3,17 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "blog-angular4": {
+    "angular-client-shop": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "blog-angular4",
-      "schematics": {
-        "@schematics/angular:class": {
-          "spec": false
-        },
-        "@schematics/angular:component": {
-          "spec": false
-        },
-        "@schematics/angular:directive": {
-          "spec": false
-        },
-        "@schematics/angular:guard": {
-          "spec": false
-        },
-        "@schematics/angular:module": {
-          "spec": false
-        },
-        "@schematics/angular:pipe": {
-          "spec": false
-        },
-        "@schematics/angular:service": {
-          "spec": false
-        }
-      },
+      "prefix": "app",
+      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/blog-angular4",
+            "outputPath": "dist/angular-client-shop",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -51,9 +29,7 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/tether/dist/js/tether.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js"
-
             ]
           },
           "configurations": {
@@ -86,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "blog-angular4:build"
+            "browserTarget": "angular-client-shop:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "blog-angular4:build:production"
+              "browserTarget": "angular-client-shop:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "blog-angular4:build"
+            "browserTarget": "angular-client-shop:build"
           }
         },
         "test": {
@@ -131,7 +107,7 @@
         }
       }
     },
-    "blog-angular4-e2e": {
+    "angular-client-shop-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -140,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "blog-angular4:serve"
+            "devServerTarget": "angular-client-shop:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "blog-angular4:serve:production"
+              "devServerTarget": "angular-client-shop:serve:production"
             }
           }
         },
@@ -160,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "blog-angular4"
+  "defaultProject": "angular-client-shop"
 }

@@ -4,13 +4,13 @@
         "directive-selector": [
             true,
             "attribute",
-            "blog-angular4",
+            "app",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
-            "blog-angular4",
+            "app",
             "kebab-case"
         ]
     }

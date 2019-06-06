@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { RpcService } from '../services/rpc.service';
 
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.css']
+  styleUrls: ['./catalog.component.css'],
+  providers: [RpcService]
 })
 export class CatalogComponent implements OnInit {
 
-  constructor() {}
+  constructor( private rpcService: RpcService ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.rpcService.getCategories().subscribe(( response ) => {
+      console.log(response);
+    });
+  }
 }

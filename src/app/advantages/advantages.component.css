@@ -5,3 +5,10 @@
 #advantages p > i {
     color: #0165b7;
 }
+#advantages p {
+    margin-top: 1rem;
+}
+
+#advantages button {
+    margin-top: 1rem;
+}

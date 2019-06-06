@@ -1,5 +1,5 @@
 {
-  "name": "blog-angular4",
+  "name": "angular-client-shop",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -23,6 +23,7 @@
     "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "web-animations-js": "^2.3.1",
@@ -30,7 +31,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.11.0",
-    "@angular/cli": "~7.1.1",
+    "@angular/cli": "~7.1.4",
     "@angular/compiler-cli": "~7.1.0",
     "@angular/language-service": "~7.1.0",
     "@types/node": "~8.9.4",
