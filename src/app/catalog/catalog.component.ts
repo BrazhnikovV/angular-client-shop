@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { RpcService } from '../services/rpc.service';
+import { Category } from '../models/category';
 
+/**
+ * @class - CatalogComponent
+ * @classdesc - компонент каталог товаров
+ */
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
@@ -9,11 +14,25 @@ import { RpcService } from '../services/rpc.service';
 })
 export class CatalogComponent implements OnInit {
 
+  /**
+   *  @access private
+   *  @var catalog: Category -
+   */
+  private catalog;
+
+  /**
+   * constructor - конструктор
+   * @param rpcService
+   */
   constructor( private rpcService: RpcService ) {}
 
+  /**
+   * ngOnInit
+   */
   ngOnInit() {
     this.rpcService.getCategories().subscribe(( response ) => {
       console.log(response);
+      this.catalog = response;
     });
   }
 }

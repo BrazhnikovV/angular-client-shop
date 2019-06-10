@@ -29,7 +29,7 @@ export class RpcService {
    * @return Observable<any> | throwError( error )
    */
   public getCategories(): Observable<any> {
-    return this.http.get<Category[]>( this.apiUrl + 'categories' ).pipe(
+    return this.http.get( this.apiUrl + 'categories/list' ).pipe(
       tap(response => {}),
       catchError(error => {
         return throwError( error );
