@@ -9,7 +9,9 @@
       <span class="catalog-section-title"><strong>{{category.parent.name}}</strong></span>
       <div class="col-md-12">
         <ul *ngFor="let subCategory of category.children" class="nav flex-column flex-nowrap">
-          <li class="nav-item"><a class="nav-link" href="#">{{subCategory.category.name}} ({{subCategory.products.length}})</a></li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/products', subCategory.category.id]">{{subCategory.category.name}} ({{subCategory.products.length}})</a>
+          </li>
         </ul>
       </div>
     </div>

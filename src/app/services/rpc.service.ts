@@ -36,4 +36,31 @@ export class RpcService {
       })
     );
   }
+
+  /**
+   * getCategories - получить список продуктов
+   * @return Observable<any> | throwError( error )
+   */
+  public getProducts(): Observable<any> {
+    return this.http.get( this.apiUrl + 'products/list' ).pipe(
+      tap(response => {}),
+      catchError(error => {
+        return throwError( error );
+      })
+    );
+  }
+
+  /**
+   * getProductsByCategoryId - получить список продуктов по id категории
+   * @param id - идентификатор категории
+   * @return Observable<any> | throwError( error )
+   */
+  public getProductsByCategoryId( id: number ): Observable<any> {
+    return this.http.get( this.apiUrl + 'products/list/' + id ).pipe(
+      tap(response => {}),
+      catchError(error => {
+        return throwError( error );
+      })
+    );
+  }
 }

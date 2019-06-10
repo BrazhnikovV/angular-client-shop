@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RpcService } from '../services/rpc.service';
-import { Category } from '../models/category';
 
 /**
  * @class - CatalogComponent
@@ -31,7 +30,6 @@ export class CatalogComponent implements OnInit {
    */
   ngOnInit() {
     this.rpcService.getCategories().subscribe(( response ) => {
-      console.log(response);
       this.catalog = response;
     });
   }

@@ -12,9 +12,9 @@ export interface Category {
 
   /**
    * @access public
-   * @var parent_id: number
+   * @var category_id: number
    */
-  parent_id: number;
+  category_id: number;
 
   /**
    * @access public
